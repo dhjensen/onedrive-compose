@@ -1,0 +1,13 @@
+version: "3.4"
+
+services:
+  onedrive:
+    image: driveone/onedrive:latest-v2.4.0
+    restart: unless-stopped
+    volumes:
+      - onedrive_conf:/onedrive/conf
+      - ~/OneDrive:/onedrive/data
+
+volumes:
+  onedrive_conf:
+    external: true
