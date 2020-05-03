@@ -2,7 +2,7 @@ version: "3.4"
 
 services:
   onedrive:
-    image: driveone/onedrive:latest-v2.4.0
+    image: driveone/onedrive:stretch-v2.4.1
     restart: unless-stopped
     volumes:
       - onedrive_conf:/onedrive/conf
