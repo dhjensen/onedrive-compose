@@ -1,4 +1,4 @@
-# Onedrive-compose
+# OneDrive compose
 
 Docker compose configuration for OneDrive client
 
