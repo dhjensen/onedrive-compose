@@ -2,7 +2,7 @@ name: OneDrive
 
 services:
   onedrive:
-    image: driveone/onedrive:2.5.5-debian
+    image: driveone/onedrive:${VERSION}-debian
     volumes:
       - onedrive_conf:/onedrive/conf
       - ~/OneDrive:/onedrive/data
