@@ -3,10 +3,14 @@ name: OneDrive
 services:
   onedrive:
     image: driveone/onedrive:${VERSION}-debian
+    container_name: onedrive
     volumes:
       - onedrive_conf:/onedrive/conf
       - ~/OneDrive:/onedrive/data
+      - /etc/timezone:/etc/timezone:ro
     restart: unless-stopped
+    labels:
+      - wud.tag.include=^\d+\.\d+\.\d+-debian$$
 
 volumes:
   onedrive_conf:
