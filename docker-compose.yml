@@ -11,6 +11,7 @@ services:
     restart: unless-stopped
     labels:
       - wud.tag.include=^\d+\.\d+\.\d+-debian$$
+      - traefik.enable=false
 
 volumes:
   onedrive_conf:
