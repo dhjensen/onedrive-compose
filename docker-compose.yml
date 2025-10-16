@@ -7,7 +7,7 @@ services:
     volumes:
       - onedrive_conf:/onedrive/conf
       - ~/OneDrive:/onedrive/data
-      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
     restart: unless-stopped
     labels:
       - wud.tag.include=^\d+\.\d+\.\d+-debian$$
@@ -15,4 +15,5 @@ services:
 
 volumes:
   onedrive_conf:
+    name: onedrive_conf
     external: true
