@@ -1,5 +1,7 @@
 # OneDrive compose
 
+Archived as I no longer use it.
+
 Docker compose configuration for OneDrive client
 
 Making the assumption that the OneDrive folder is located in the home folder.
